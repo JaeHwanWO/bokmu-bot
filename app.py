@@ -60,7 +60,7 @@ def _calc_percentage():
 def _render_progress_bar():
     # 텍스트 프로그레스바
     total_squares = 20
-    filled_squares = round(_calc_percentage() / (100 / total_squares))
+    filled_squares = int(round(_calc_percentage() / (100 / total_squares)))
     unfilled_squares = total_squares - filled_squares
 
     progress_bar = ""
